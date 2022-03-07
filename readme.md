@@ -17,6 +17,6 @@ I will update this project, soon.
 
 #### ✅ To do list
 - [x] Start the site
-- [ ] Make a menu
+- [x] Make a menu
 - [ ] Make content
 - [ ] Code effects
