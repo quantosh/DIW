@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Work+Sans&display=swap');
+    </style>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <title>Página web</title>
 </head>
@@ -13,31 +17,52 @@
     <div class="main-container">
         <!--Menu-->
         <div class="menu">
-            <div class="main-menu">
-                <div class="logo"><img src="logo.png" alt=""></div>
+            <div class="logo">
+                <div class="logo"><img src="logo.png" width="30%" alt="Logotipo del sitio"></div>
+            </div>
+            <div class="menu-left">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Works</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
         <!--Menu Mobile-->
-        <div class="mobile-menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Works</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+        <div class="menu-mobile">
+            <div class="menu-open-close">
+                <div class="header">
+                    <a href="" class="logo"><img src="logo.png" width="64" alt="Logotipo del sitio - Mobile"></a>
+                    <a href="#" id="buttonOpenCloseMenu">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                            fill="#000000">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                        </svg>
+                    </a>
+                </div>
+                <div id="menu-mobile-items" class="menu-mobile-closed">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#works">Works</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <!--Menu Mobile-->
         <!--Menu Mobile-->
         <!--Menu Mobile-->
         <!--Menu Mobile-->
-        <!--Menu Mobile-->
-        <!--Menu Mobile-->
+        <!--Slider or Video-->
+        <section class="main-video">
+            <div class="video">
+                <video src="video/video.mp4" autoplay loop></video>
+            </div>
+        </section>
+        <!--Short Intro-->
     </div>
     <section class="intro">
         <h2>LOUD STORIES <br> EXCEPTIONAL CRAFT</h2> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
@@ -45,10 +70,8 @@
         esse?
     </section>
 
-    <!-- 
-            WORK
-        -->
-    <section id="work">
+    <!--Work-->
+    <section id="works" class="works">
         <h2>WORK</h2>
         <div class="grid work">
             <!-- ITEM 
@@ -137,9 +160,7 @@
             </a>
         </div>
     </section>
-    <!-- 
-            ABOUT
-        -->
+    <!--About-->
     <section id="about" class="about">
         <h2>SKILLS</h2>
         <p> CREATIVE DIRECTION | STORY DEVELOPMENT </p>
@@ -165,9 +186,7 @@
         </div>
     </section>
 
-    <!-- 
-            CONTACT
-        -->
+    <!--Contact-->
     <section id="contact" class="contact">
         <div class="contact-container">
             <h2>CONTACT US</h2>
